@@ -196,6 +196,12 @@ document.getElementById("facts").style.backgroundImage = "url(./img/fact"+step+"
   document.getElementById("bus").style.display = "none";
   document.getElementById("animals").style.display = "none";
   document.getElementById("container").style.display = "none";
+  document.getElementById("firework").style.display = "none";
+  document.getElementById("gift").style.display = "none";
+  document.getElementById("wish").style.display = "none";
+    document.getElementById("redenvelope").style.display = "none";
+    document.getElementById("usd").style.display = "none";
+  document.getElementById("wish").style.display = "none";
   document.getElementById("music").innerHTML ="<audio autoplay style='display: none;'><source src='./sound/sky.mp3'></audio>";
 });
 
@@ -222,6 +228,11 @@ document.getElementById("facts").style.backgroundImage = "url(./img/fact"+step+"
   document.getElementById("bus").style.right = "-50px";
   document.getElementById("animals").style.display = "block";
   document.getElementById("container").style.display = "block";
+  document.getElementById("firework").style.display = "block";
+  document.getElementById("gift").style.display = "block";
+  document.getElementById("wish").style.display = "none";
+  document.getElementById("redenvelope").style.display = "block";
+    document.getElementById("usd").style.display = "none";
   document.getElementById("music").innerHTML ="";
 
 });
@@ -266,3 +277,48 @@ document.getElementById("firework").style.height ="0px";
 
 });
 
+document.getElementById("cherry1").addEventListener("mouseenter", function(){
+document.getElementById("cherry1").style.width="30%";
+document.getElementById("cherry1").style.height="37%";
+
+});
+document.getElementById("cherry1").addEventListener("mouseleave", function(){
+document.getElementById("cherry1").style.width="25%";
+document.getElementById("cherry1").style.height="32%";
+});
+document.getElementById("cherry2").addEventListener("mouseenter", function(){
+document.getElementById("cherry2").style.width="45%";
+document.getElementById("cherry2").style.height="40%";
+
+});
+document.getElementById("cherry2").addEventListener("mouseleave", function(){
+document.getElementById("cherry2").style.width="40%";
+document.getElementById("cherry2").style.height="35%";
+});
+
+document.getElementById("gift").addEventListener("mouseenter", function(){
+document.getElementById("gift").style.width="80px";
+document.getElementById("gift").style.height="80px";
+
+});
+document.getElementById("gift").addEventListener("mouseleave", function(){
+document.getElementById("gift").style.width="60px";
+document.getElementById("gift").style.height="60px";
+});
+
+function mygift(){
+  var x = document.getElementById("wish");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function mymoney(){
+  var y = document.getElementById("usd");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}

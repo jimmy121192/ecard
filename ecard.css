@@ -317,7 +317,19 @@ ul{padding:0;margin:0;}
     
     z-index: 7;
   }
-
+#gift {
+    background-image: url("./img/gift.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  transition: 1s;
+    left: 470px;
+    bottom: 160px;
+    
+    z-index: 7;
+  }
 #cherry2 {
     background-image: url("./img/mai.png");
     background-size: cover;
@@ -345,6 +357,58 @@ ul{padding:0;margin:0;}
     margin: auto;
     z-index: 10;
     transition: 0.5s;
+
+  }
+    #wish {
+      font-size: 30px;
+      text-align: justify;
+   background-image: url("./img/wish.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+  padding: 50px;
+    width: 280px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 200px;
+    margin: auto;
+    z-index: 11;
+    display: none;
+    transition: 2s;
+
+  }
+    #usd{
+
+   background-image: url("./img/100usd.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+    width: 450px;
+    height: 180px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 200px;
+    margin: auto;
+    z-index: 11;
+    display: none;
+  
+
+  }
+  #redenvelope {
+    background-image: url('./img/red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 100px;
+  
+    bottom: 250px;
+
+    z-index: 11;
+    display: block;
 
   }
 
@@ -909,11 +973,11 @@ to { left: 2000px; }
   background-image: url("./img/firework.png");
   background-position: center top;
   background-size: cover;
-  width: 100px;
-  height: 200px;
+  width: 80px;
+  height: 160px;
   position: absolute;
-  left: 40%;
-  top : 250px;
+  left: 500px;
+  top : 500px;
   z-index: 8;
   display: block;
   transition: 10s;
